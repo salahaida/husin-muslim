@@ -1,0 +1,66 @@
+{% extends "base_en.html" %}
+{% load static %}
+
+{% block title %}
+  Husin Muslim
+{% endblock %}
+
+{% block body %}
+<header class="masthead" style="background-image:url('{% static "assets/img/intro-bg.jpg" %}');">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <h1>Hisn Muslim</h1>
+                    <p class="intro-text"><br>
+                      The Muslim’s Fortress from the Remembrance of the Book and the Sunnah contains the remembrances of the Prophet Muhammad, may God’s prayers and peace be upon him, in various places of daily life. It is one of the most widely used Islamic books for the ease of his style and his commitment to the authentic hadiths.
+                      <br><br><br></p>
+                    <div>
+
+
+
+                      </form>
+
+
+                      <form>
+                        <input type="text" name="search" class="se" placeholder="Search Here"/>
+                        <button class="btn btn-primary bt-search"><i class="fa fa-search"></i></button>
+                      </form>
+
+                  </div>
+                  <a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down search"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto autoo">
+                <h2 class="fontme">Adkars :</h2>
+                <hr>
+                <p>
+                    Remembrance of the Prophet Muhammad, may God bless him and grant him peace, in various places of daily life
+                </p>
+                {% for post_en in all_posts_en %}
+
+
+                  <a href="{% url 'post_en' post_en.id %}">
+                  <button class="btn btn-primary btn-lg btn-default fontme" type="button">{{post_en.title_en|safe|truncatechars:32}}<span class="network-name">&nbsp;</span><i class="fa fa-chevron-right fa-fw"></i></button>
+                  </a>
+
+
+                {% endfor %}
+
+
+
+            </div>
+        </div>
+        <a class="btn btn-link btn-circle top" role="button" href="#page-top"><i class="fa fa-angle-double-up search"></i>
+        </a>
+    </div>
+</section>
+{% endblock %}

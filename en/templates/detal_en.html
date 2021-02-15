@@ -1,0 +1,883 @@
+{% extends "base_en.html" %}
+{% block title %}
+  {{post_en.title_en}}
+{% endblock %}
+
+{% block body %}
+<section id="about" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto autoo">
+                <h2 class="fontme">{{post_en.title_en}}</h2>
+                <hr>
+                <center>
+
+                  <audio controls preload="none">
+                    <source src="{{post_en.url_en}}" type="audio/mpeg" class="audio">
+                  </audio>
+
+                </center>
+
+
+                <hr>
+
+                <p class="fontme">{{post_en.content_en}}</p>
+
+
+              </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+
+<!--
+{{post.content}}
+
+
+
+
+  <h2> <a href="{{post.url}}">RUN</a></h2>
+
+
+<i class="fa fa-home">here</i>
+
+
+<div class="fixed-bottom">
+
+  <center>
+  <audio controls>
+    <source style="background-color: red;" src="http://www.hisnmuslim.com/audio/ar/ar_7esn_AlMoslem_by_Doors_007.mp3" type="audio/mp3">
+      Your Browser is to old,  buy new browser
+    </audio>
+  </center>
+
+
+</div>
+<div class="player chapter-player">
+
+					<a class="fa" data-audio="http://www.hisnmuslim.com/audio/ar/ar_7esn_AlMoslem_by_Doors_028.mp3"></a>
+										<a class="fa fa-cog config-icon" onclick="toggle_settings();"></a>
+										<a class="fa fa-globe config-icon" onclick="toggle_languages();"></a>
+
+				</div>
+
+////////////////////////////////////////////////////////////////////////////////
+<div class="chapter-name-title">
+          <a class="menu-icon" onclick="toggle_menu();">
+            <i class="fa fa-bars"></i>
+          </a>
+          <span id="indextitle">الفهرس</span>
+          <input class="search" placeholder="بحث"/>
+          <a class='search-icon' onclick='toggle_search();'><i class="fa fa-search"></i></a>
+        </div>
+
+        <ol class="list list-unstyled chapter-names-list">
+                      <li class="selected"><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/0">
+
+                أذكار النوم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/1">
+
+                أذكار الصباح والمساء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/2">
+
+                دعاء ُلبْس الثوب							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/3">
+
+                دعاء ُلبْس الثوب الجديد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/4">
+
+                الدعاء لمن لبس ثوبا جديدا							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/5">
+
+                ما يقول إذا وضع ثوبه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/6">
+
+                دعاء دخول الخلاء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/7">
+
+                دعاء الخروج من الخلاء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/8">
+
+                الذكر قبل الوضوء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/9">
+
+                الذكر بعد الفراغ من الوضوء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/10">
+
+                الذكر عند الخروج من المنزل							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/11">
+
+                الذكر عند دخول المنزل							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/12">
+
+                دعاء الذهاب إلى المسجد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/13">
+
+                دعاء دخول المسجد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/14">
+
+                دعاء الخروج من المسجد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/15">
+
+                أذكار الآذان							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/16">
+
+                دعاء الاستفتاح							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/17">
+
+                دعاء الركوع							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/18">
+
+                دعاء الرفع من الركوع							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/19">
+
+                دعاء السجود							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/20">
+
+                دعاء الجلسة بين السجدتين							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/21">
+
+                دعاء سجود التلاوة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/22">
+
+                التشهد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/23">
+
+                الصلاة على النبي بعد التشهد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/24">
+
+                الدعاء بعد التشهد الأخير قبل السلام							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/25">
+
+                الأذكار بعد السلام من الصلاة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/26">
+
+                دعاء صلاة الاستخارة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/27">
+
+                أذكار الصباح والمساء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/28">
+
+                أذكار الاستيقاظ من النوم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/29">
+
+                الدعاء إذا تقلب ليلا							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/30">
+
+                دعاء الفزع في النوم و من بُلِيَ بالوحشة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/31">
+
+                ما يفعل من رأى الرؤيا أو الحلم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/32">
+
+                دعاء قنوت الوتر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/33">
+
+                الذكر عقب السلام من الوتر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/34">
+
+                دعاء الهم والحزن							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/35">
+
+                دعاء الكرب							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/36">
+
+                دعاء لقاء العدو و ذي السلطان							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/37">
+
+                دعاء من خاف ظلم السلطان							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/38">
+
+                الدعاء على العدو							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/39">
+
+                ما يقول من خاف قوما							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/40">
+
+                دعاء من أصابه وسوسة في الإيمان							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/41">
+
+                دعاء قضاء الدين							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/42">
+
+                دعاء الوسوسة في الصلاة و القراءة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/43">
+
+                دعاء من استصعب عليه أمر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/44">
+
+                ما يقول ويفعل من أذنب ذنبا							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/45">
+
+                دعاء طرد الشيطان و وساوسه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/46">
+
+                الدعاء حينما يقع ما لا يرضاه أو ُ غلب على أمره							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/47">
+
+                ﺗﻬنئة المولود له وجوابه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/48">
+
+                ما يعوذ به الأولاد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/49">
+
+                الدعاء للمريض في عيادته							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/50">
+
+                فضل عيادة المريض							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/51">
+
+                دعاء المريض الذي يئس من حياته							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/52">
+
+                تلقين المحتضر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/53">
+
+                دعاء من أصيب بمصيبة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/54">
+
+                الدعاء عند إغماض الميت							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/55">
+
+                الدعاء للميت في الصلاة عليه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/56">
+
+                الدعاء للفرط في الصلاة عليه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/57">
+
+                دعاء التعزية							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/58">
+
+                الدعاء عند إدخال الميت القبر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/59">
+
+                الدعاء بعد دفن الميت							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/60">
+
+                دعاء زيارة القبور							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/61">
+
+                دعاء الريح							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/62">
+
+                دعاء الرعد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/63">
+
+                من أدعية الاستسقاء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/64">
+
+                الدعاء إذا نزل المطر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/65">
+
+                الذكر بعد نزول المطر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/66">
+
+                من أدعية الاستصحاء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/67">
+
+                دعاء رؤية الهلال							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/68">
+
+                الدعاء عند إفطار الصائم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/69">
+
+                الدعاء قبل الطعام							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/70">
+
+                الدعاء عند الفراغ من الطعام							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/71">
+
+                دعاء الضيف لصاحب الطعام							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/72">
+
+                التعريض بالدعاء لطلب الطعام أو الشراب							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/73">
+
+                الدعاء إذا أفطر عند أهل بيت							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/74">
+
+                دعاء الصائم إذا حضر الطعام ولم يفطر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/75">
+
+                ما يقول الصائم إذا سابه أحد							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/76">
+
+                الدعاء عند رؤية باكورة الثمر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/77">
+
+                دعاء العطاس							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/78">
+
+                ما يقال للكافر إذا عطس فحمد الله							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/79">
+
+                الدعاء للمتزوج							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/80">
+
+                دعاء المتزوج و شراء الدابة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/81">
+
+                الدعاء قبل إتيان الزوجة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/82">
+
+                دعاء الغضب							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/83">
+
+                دعاء من رأى مبتلى							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/84">
+
+                ما يقال في اﻟﻤﺠلس							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/85">
+
+                كفارة اﻟﻤﺠلس							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/86">
+
+                الدعاء لمن قال غفر الله لك							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/87">
+
+                الدعاء لمن صنع إليك معروفا							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/88">
+
+                ما يعصم الله به من الدجال							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/89">
+
+                الدعاء لمن قال إني أحبك في الله							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/90">
+
+                الدعاء لمن عرض عليك ماله							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/91">
+
+                الدعاء لمن أقرض عند القضاء							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/92">
+
+                دعاء الخوف من الشرك							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/93">
+
+                الدعاء لمن قال بارك الله فيك							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/94">
+
+                دعاء كراهية الطيرة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/95">
+
+                دعاء الركوب							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/96">
+
+                دعاء السفر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/97">
+
+                دعاء دخول القرية أو البلدة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/98">
+
+                دعاء دخول السوق							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/99">
+
+                الدعاء إذا تعس المركوب							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/100">
+
+                دعاء المسافر للمقيم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/101">
+
+                دعاء المقيم للمسافر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/102">
+
+                التكبير و التسبيح في سير السفر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/103">
+
+                دعاء المسافر إذا أسحر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/104">
+
+                الدعاء إذا نزل مترلا في سفر أو غيره							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/105">
+
+                ذكر الرجوع من السفر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/106">
+
+                ما يقول من أتاه أمر يسره أو يكرهه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/107">
+
+                فضل الصلاة على النبي صلى الله عليه و سلم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/108">
+
+                إفشاء السلام							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/109">
+
+                كيف يرد السلام على الكافر إذا سلم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/110">
+
+                الدُّعاءُ عِنْدَ سَمَاعِ صِياحِ الدِّيكِ ونَهِيقِ الْحِمَارِ							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/111">
+
+                دعاء نباح الكلاب بالليل							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/112">
+
+                الدعاء لمن سببته							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/113">
+
+                ما يقول المسلم إذا مدح المسلم							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/114">
+
+                ما يقول المسلم إذا زكي 							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/115">
+
+                كيف يلبي المحرم في الحج أو العمرة ؟							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/116">
+
+                التكبير إذا أتى الركن الأسود							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/117">
+
+                الدعاء بين الركن اليماني والحجر الأسود							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/118">
+
+                دعاء الوقوف على الصفا والمروة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/119">
+
+                الدعاء يوم عرفة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/120">
+
+                الذكر عند المشعر الحرام							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/121">
+
+                التكبير عند رمي الجمار مع كل حصاة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/122">
+
+                دعاء التعجب والأمر السار							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/123">
+
+                ما يفعل من أتاه أمر يسره							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/124">
+
+                ما يقول من أحس وجعا في جسده							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/125">
+
+                دعاء من خشي أن يصيب شيئا بعينه							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/126">
+
+                ما يقال عند الفزع							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/127">
+
+                ما يقول عند الذبح أو النحر							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/128">
+
+                ما يقول لرد كيد مردة الشياطين							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/129">
+
+                الاستغفار و التوبة							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/130">
+
+                فضل التسبيح و التحميد، و التهليل، و التكبير							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/131">
+
+                كيف كان النبي يسبح؟							</a>
+            </li>
+
+                      <li><a class="ctitle"
+                                                                                    href="https://hisnmuslim.com/i/ar/132">
+
+                من أنواع الخير والآداب الجامعة							</a>
+            </li>
+
+                  </ol>
+      </div>
+
+    </div>
+
+ -->

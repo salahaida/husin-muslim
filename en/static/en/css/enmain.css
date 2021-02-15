@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Variants';
+    src: url('../fonts/Variants.ttf')  format("truetype"),
+         local('Variants');
+  }
+@font-face {
+      font-family: 'Tajawal';
+      src: url('../fonts/Tajawal.ttf')  format("truetype"),
+           local('Tajawal');
+  }
+  body{
+    font-family: 'Tajawal', sans-serif;
+  }
+html, body{
+    direction: ltr;
+    text-align: center;
+}
+.fontme{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-display: auto;
+}
+.font{
+  font-family: 'Tajawal', sans-serif;
+}
+.icona{
+
+  font-size: 33px;
+  font-size: 33px;
+}
+.navbarme{
+  background-color: rgb(215, 114, 69);
+  border: 1px solid rgb(0, 255, 163);
+}
+.drop{
+  font-size: 25px;
+  font-family: 'Variants', sans-serif;
+  border-radius: 20px;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid rgb(0, 255, 133);
+  text-align: center;
+}
+.drops:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.drops:focus{
+  background-color: rgb(20, 212, 154);
+  color: black;
+}
+.short{
+  font-size: 20px;
+}
+.audio{
+  background-color: red;
+  color: blue;
+  border: 2px solid rgb(0, 255, 179);
+}

@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="{% static "assets/fonts/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/fonts/ionicons.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/css/Footer-Dark.css" %}">
+    <link rel="stylesheet" href="{% static "assets/css/untitled.css" %}">
+    <link rel="stylesheet" href="{% static "en/css/enmain.css" %}">
+    <link rel="shortcut icon" href="{% static "assets/img/favicon.png" %}">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger fontme" href="../en">Hisn Muslim</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto font">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="connect_en">Connect us</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="about_en">About</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"></li>
+                    <li class="nav-item nav-link js-scroll-trigger dropdown">
+     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="presentation" aria-haspopup="true" aria-expanded="false">Language</a>
+     <div class="dropdown-menu drop">
+       <a class="dropdown-item drops" href="../">العربية</a>
+       <a class="dropdown-item drops" href="../en">English</a>
+  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     {% block body %}
+
+     {% endblock %}
+
+    <div id="download" class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>My Apps&nbsp;<a href="https://bootstrapstudio.io/releases/app/4.5.6/#"> For Android</a><br></h3>
+                        <ul>
+                            <li><a href="#">Quran&nbsp;</a></li>
+                            <li><a href="#">HISN MUSLIM</a></li>
+                            <li><a href="#">Kasas Anbia</a></li>
+                            <li><a href="#">Ruqia Shareia</a></li>
+                            <li><a href="#">Astafar</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About<br></h3>
+                        <ul>
+                            <li><a href="about_en">About<br></a><a href="connect_en">Connect us<br></a></li>
+                            <li><a href="https://github.com/salahaida/husin-muslim">Download Code Source Free</a></li>
+                            <li><a href="https://github.com/salahaida/husin-muslim">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text" dir="rtl">
+                        <h3 dir="rtl">HISN MUSLIM<br></h3>
+                        <p>The Muslim’s Fortress from the Remembrance of the Book and the Sunnah contains the remembrances of the Prophet Muhammad, may God’s prayers and peace be upon him, in various places of daily life. It is one of the most widely used Islamic books for the ease of his style and his commitment to the authentic hadiths.<br></p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">HISN MUSLIM © 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{% static "assets/js/grayscale.js" %}"></script>
+</body>
+
+</html>

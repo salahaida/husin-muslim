@@ -1,0 +1,14 @@
+
+
+{% if post %}
+    <h1>search:</h1>
+    <br>
+{% for i in post %}
+   <h3>
+     <a href="{{post.title}}">{{post.title}}</a>
+   </h3>
+{% endfor %}
+  {% else %}
+  <h1>not fond title in search</h1>
+
+{% endif %}

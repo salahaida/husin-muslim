@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  حصن المسلم
+{% endblock %}
+
+
+{% block body %}
+<header class="masthead" style="background-image:url('{% static "assets/img/intro-bg.jpg" %}');">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- <h1 class="brand-heading fontme">حصن المسلم<br></h1> -->
+                    <h1 class="fontme" style="font-size: 60px;">حصن المسلم</h1>
+                    <p class="intro-text"><br>حصن المسلم من أذكار الكتاب والسنة يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث.<br><br><br></p>
+                    <div>
+
+
+
+                      </form>
+
+
+                      <form>
+                        <!-- btn btn-primary bt-search  -->
+                        <button class="btn btn-primary bt-search searchs"><i class="fa fa-search"></i></button>
+                        <input type="text" name="search" class="se" placeholder="ابحث عن الاذكار"/>
+                      </form>
+
+                  </div>
+                  <a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down search"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto autoo">
+
+                <h2 class="fontme">الاذكار:</h2>
+                <hr>
+                <p>
+                   أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية
+                </p>
+                {% for post in all_posts %}
+
+
+                  <a href="{% url 'post' post.id %}">
+                  <button class="btn btn-primary btn-lg btn-default fontme" type="button">{{post.title}}<span class="network-name spn">&nbsp;</span><i class="fa fa-chevron-left fa-fw"></i></button>
+                  </a>
+
+
+                {% endfor %}
+
+
+
+            </div>
+        </div>
+
+        <a class="btn btn-link btn-circle" role="button" href="#page-top"><i class="fa fa-angle-double-up search"></i>
+        </a>
+    </div>
+</section>
+{% endblock %}
